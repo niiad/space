@@ -5,6 +5,5 @@
 [node name="Meteor" type="Node2D"]
 
 [node name="MeteorImage" type="Sprite2D" parent="."]
-position = Vector2(338, 202.75)
-scale = Vector2(0.268, 0.293)
+scale = Vector2(0.164, 0.1845)
 texture = ExtResource("1_1kgcx")

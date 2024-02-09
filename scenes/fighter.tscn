@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw1cnh5pxi7nb"]
+
+[ext_resource type="Texture2D" uid="uid://dcl14hdd01i7j" path="res://graphics/fighter.png" id="1_hnb85"]
+
+[node name="Fighter" type="Node2D"]
+
+[node name="FigtherImage" type="Sprite2D" parent="."]
+position = Vector2(430.188, 357.95)
+scale = Vector2(0.389727, 0.254329)
+texture = ExtResource("1_hnb85")

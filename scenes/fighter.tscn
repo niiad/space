@@ -1,10 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://cw1cnh5pxi7nb"]
+[gd_scene load_steps=3 format=3 uid="uid://cw1cnh5pxi7nb"]
 
+[ext_resource type="Script" path="res://scenes/fighter.gd" id="1_etdyg"]
 [ext_resource type="Texture2D" uid="uid://dcl14hdd01i7j" path="res://graphics/fighter.png" id="1_hnb85"]
 
 [node name="Fighter" type="Node2D"]
+script = ExtResource("1_etdyg")
 
 [node name="FigtherImage" type="Sprite2D" parent="."]
-position = Vector2(430.188, 357.95)
-scale = Vector2(0.389727, 0.254329)
+scale = Vector2(0.275287, 0.15673)
 texture = ExtResource("1_hnb85")

@@ -1,3 +1,18 @@
-[gd_scene format=3 uid="uid://btuqlawjwf7oh"]
+[gd_scene load_steps=4 format=3 uid="uid://btuqlawjwf7oh"]
+
+[ext_resource type="Texture2D" uid="uid://bn88hyrebkyeo" path="res://graphics/bg.jpg" id="1_ernam"]
+[ext_resource type="PackedScene" uid="uid://cw1cnh5pxi7nb" path="res://scenes/fighter.tscn" id="2_i21h7"]
+[ext_resource type="PackedScene" uid="uid://dpt4fu7gmfuts" path="res://scenes/meteor.tscn" id="3_am77d"]
 
 [node name="Level" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(638.5, 359.75)
+scale = Vector2(2.09807, 2.07917)
+texture = ExtResource("1_ernam")
+
+[node name="Fighter" parent="." instance=ExtResource("2_i21h7")]
+position = Vector2(685, 449)
+
+[node name="Meteor" parent="." instance=ExtResource("3_am77d")]
+position = Vector2(720, 166)

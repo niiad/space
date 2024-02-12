@@ -3,9 +3,13 @@
 [ext_resource type="Script" path="res://scenes/fighter.gd" id="1_etdyg"]
 [ext_resource type="Texture2D" uid="uid://dcl14hdd01i7j" path="res://graphics/fighter.png" id="1_hnb85"]
 
-[node name="Fighter" type="Node2D"]
+[node name="Fighter" type="CharacterBody2D"]
 script = ExtResource("1_etdyg")
 
 [node name="FigtherImage" type="Sprite2D" parent="."]
 scale = Vector2(0.275287, 0.15673)
 texture = ExtResource("1_hnb85")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-1, 0)
+polygon = PackedVector2Array(4, -49, -7, -26, -3, -11, -3, -1, -16, -1, -16, -6, -23, -6, -23, 31, -17, 32, -8, 39, 11, 39, 21, 32, 27, 34, 27, -6, 20, -6, 20, 0, 11, 0, 11, 0, 9, -12, 11, -26)

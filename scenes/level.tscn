@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://btuqlawjwf7oh"]
+[gd_scene load_steps=8 format=3 uid="uid://btuqlawjwf7oh"]
 
 [ext_resource type="Texture2D" uid="uid://bn88hyrebkyeo" path="res://graphics/bg.jpg" id="1_ernam"]
 [ext_resource type="PackedScene" uid="uid://cw1cnh5pxi7nb" path="res://scenes/fighter.tscn" id="2_i21h7"]
@@ -9,6 +9,12 @@ size = Vector2(15.5, 720)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ojulm"]
 size = Vector2(12, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vnxst"]
+size = Vector2(1280, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vktme"]
+size = Vector2(1280, 14)
 
 [node name="Level" type="Node2D"]
 
@@ -36,3 +42,15 @@ shape = SubResource("RectangleShape2D_8su5k")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/LeftBorder"]
 position = Vector2(-6, 360)
 shape = SubResource("RectangleShape2D_ojulm")
+
+[node name="TopBorder" type="StaticBody2D" parent="Borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/TopBorder"]
+position = Vector2(640, -6)
+shape = SubResource("RectangleShape2D_vnxst")
+
+[node name="BottomBorder" type="StaticBody2D" parent="Borders"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/BottomBorder"]
+position = Vector2(640, 727)
+shape = SubResource("RectangleShape2D_vktme")

@@ -49,8 +49,8 @@ shape = SubResource("RectangleShape2D_ojulm")
 position = Vector2(640, -6)
 shape = SubResource("RectangleShape2D_vnxst")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Borders"]
+[node name="BottomBorder" type="StaticBody2D" parent="Borders"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/BottomBorder"]
 position = Vector2(640, 727)
 shape = SubResource("RectangleShape2D_vktme")

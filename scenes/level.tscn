@@ -54,3 +54,6 @@ shape = SubResource("RectangleShape2D_vnxst")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/BottomBorder"]
 position = Vector2(640, 727)
 shape = SubResource("RectangleShape2D_vktme")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
